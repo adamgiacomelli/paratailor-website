@@ -1,28 +1,24 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 
-export default class Navbar extends Component {
+const LinkButton = ({ to, label }) => (
+  <Nav.Link>
+    <NavLink to={to}>{label}</NavLink>
+  </Nav.Link>
+);
+
+export default class Header extends Component {
   render() {
-    const style = {
-      marginRight: 10,
-      color: "black"
-    };
-
     return (
-      <div>
-        <NavLink to="/" style={style}>
-          Home
-        </NavLink>
-        <NavLink to="/about" style={style}>
-          About
-        </NavLink>
-        <NavLink to="/portfolio" style={style}>
-          Portfolio
-        </NavLink>
-        <NavLink to="/hire-me" style={style}>
-          Hire
-        </NavLink>
-      </div>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="/">Paratailor</Navbar.Brand>
+        <Nav className="mr-auto">
+          <LinkButton to="" label={"Home"} />
+          <LinkButton to="/download" label={"Downloads"} />
+          <LinkButton to="/about" label={"About"} />
+        </Nav>
+      </Navbar>
     );
   }
 }

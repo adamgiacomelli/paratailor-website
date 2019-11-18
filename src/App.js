@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Downloads from "./components/Downloads";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Hire from "./components/Hire";
-import Project from "./components/Project";
-import projects from "./db.json";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default class App extends Component {
   render() {
@@ -15,30 +13,21 @@ export default class App extends Component {
       <Router>
         <Fragment>
           <Navbar />
-          <Route exact path="/" component={Home}>
-            Home
-          </Route>
-          <Route path="/about" component={About}>
-            About
-          </Route>
-          <Route path="/hire-me" component={Hire}>
-            Hire Me
-          </Route>
-          <Route
-            exact
-            path="/portfolio"
-            render={routerProps => {
-              return <Portfolio {...routerProps} projects={projects} />;
-            }}
-          >
-            Portfolio
-          </Route>
-          <Route
-            path={`/portfolio/:id`}
-            render={routerProps => {
-              return <Project {...routerProps} projects={projects} />;
-            }}
-          />
+          <Container>
+            <Row>
+              <Col sm={12}>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/downloads">
+                  <Downloads />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+              </Col>
+            </Row>
+          </Container>
         </Fragment>
       </Router>
     );
