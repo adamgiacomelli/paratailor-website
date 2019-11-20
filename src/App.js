@@ -13,7 +13,7 @@ export default class App extends Component {
       <Router>
         <Fragment>
           <Navbar />
-          <Container>
+          <Container className="root">
             <Row>
               <Col sm={12}>
                 <Route exact path="/">

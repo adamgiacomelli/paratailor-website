@@ -11,11 +11,11 @@ export default class About extends Component {
   }
 
   componentWillMount() {
-    // Get the contents from the Markdown file and put them in the React state, so we can reference it in render() below.
     fetch(AboutText)
       .then(res => res.text())
       .then(text => this.setState({ markdown: text }));
   }
+
   render() {
     const { markdown } = this.state;
 
