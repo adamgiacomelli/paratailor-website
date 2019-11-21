@@ -11,10 +11,9 @@ const LinkButton = ({ to, label }) => (
 export default class Header extends Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" fixed="top">
         <Navbar.Brand href="/">Paratailor</Navbar.Brand>
         <Nav className="mr-auto">
-          <LinkButton to="" label={"Home"} />
           <LinkButton to="/downloads" label={"Downloads"} />
           <LinkButton to="/about" label={"About Me"} />
         </Nav>

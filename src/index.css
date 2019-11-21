@@ -11,6 +11,16 @@ code {
     monospace;
 }
 
+a {
+  color: #7700cf;
+}
+
+nav.navbar {
+  background-image: linear-gradient(to bottom, #222222, #111111);
+  background-repeat: repeat-x;
+  border-color: #252525;
+}
+
 h1 {
   font-size: 32px;
 }
@@ -30,4 +40,36 @@ h4 {
 
 .root {
   padding: 40px;
+}
+
+.home-img-wrapper {
+  min-height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 55px;
+}
+
+h1.title {
+  font-size: 50px;
+  font-weight: 500;
+  position: absolute;
+  top: 50px;
+  margin: 50px;
+  color: white;
+  padding: 10px;
+  background-color: indigo;
+}
+
+h2.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  top: 140px;
+  margin: 50px;
+  color: white;
+  padding: 10px;
+  background-color: #00824b;
 }

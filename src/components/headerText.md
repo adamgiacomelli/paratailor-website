@@ -1,7 +1,3 @@
-# ParaTailor PT9
-Paraglider construction, design and aerodynamics
-
----
 #### Program use
 Demo version is intended to help users to get familiar with ParaTailors's features.
 
