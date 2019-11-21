@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Downloads from "./components/Downloads";
 import About from "./components/About";
+import Manual from "./components/Manual";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default class App extends Component {
@@ -24,6 +25,9 @@ export default class App extends Component {
                 </Route>
                 <Route path="/about">
                   <About />
+                </Route>
+                <Route path="/manual">
+                  <Manual />
                 </Route>
               </Col>
             </Row>

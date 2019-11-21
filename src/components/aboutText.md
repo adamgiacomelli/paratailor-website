@@ -4,6 +4,12 @@
 Living in Davča, Železniki, Slovenija.
 A retired mathematician - passioned hobby: paragliding
 
+Contact me if you are interested in the software!
+Comments, suggestions and proposals are welcome!
+E-mail me at giacomelli.france0@gmail.com
+
+## Paratailor
+
 ParaTailor is a reincarnation of ancient Delphi project, used around 20 years ago by Air Systems,Sky Paragliders and others around year 2000. Fever, Flirt, NjamNjam, Tanov were designed by it.
 
 ParaTailor is new, fully revised project with new features written in C++. It fully exports everything what is created in it to DXF format.

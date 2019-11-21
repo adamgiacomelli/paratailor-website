@@ -6,6 +6,8 @@ PT9 inherits most properties of previous versions. Bridle,diagonals and cross-po
 
 The latest update has finally released CFD stable revision !
 
+You can download it [here](/downloads) 
+
 It will be nice sharing your experience....
 
 -----

@@ -15,8 +15,8 @@ export default class Header extends Component {
         <Navbar.Brand href="/">Paratailor</Navbar.Brand>
         <Nav className="mr-auto">
           <LinkButton to="" label={"Home"} />
-          <LinkButton to="/download" label={"Downloads"} />
-          <LinkButton to="/about" label={"About"} />
+          <LinkButton to="/downloads" label={"Downloads"} />
+          <LinkButton to="/about" label={"About Me"} />
         </Nav>
       </Navbar>
     );

@@ -1,7 +1,7 @@
-User's manual
-PT9   /paratailor PT9  2018 /
- 
- 
+# User's manual
+##### PT9   /paratailor PT9  2018 /
+
+
 This manual covers the following topics, listed bellow:
  
 1. Geometry and other data
@@ -32,8 +32,9 @@ This manual covers the following topics, listed bellow:
  
 14. Scaling models
  
-15.Output
-1. Geometry data
+15. Output
+
+## 1. Geometry data
  
 Geometry dimensions: [m]  by default,
 some small geometry values in [mm]
@@ -53,7 +54,7 @@ control points diameter [mm] (for DXF output files)
 Totala number of cells – <accept change> or ignore to preserve the current value
  
  
-2. Ribs,morphing,cross ports
+## 2. Ribs,morphing,cross ports
  
 <Import>  button:
 - airfoils in the default form of text files { X[]   Y[] } table, normalized or not …
@@ -68,7 +69,7 @@ else it is optional … (slider)
  
  
  
-3. Central line positions
+## 3. Central line positions
 - select the position of lines  A,B,C,D,E and F  in %  from the leading edge,
 - select opening points O1,O2 in %, where O1 is start opening, O2 is end opening,
  
@@ -79,14 +80,14 @@ Using line-morphing, you can adjust lines all over the wing to the desired shape
 be aware of overlapping lines,what would result in unexpected behaviour …
  
  
-4. Base line shape morphing
+## 4. Base line shape morphing
  
 - base line should lay under the main circle (the center in hangning point)
 - at the top center, base line should be directed horizontal (but not necesarry! )
 - use arrow keys to adjust fine position of the small buttons
 - every change of button position results in the change of canopy area and aspect ratio,which depends also on the flat wingtip shape !
  
-5. Wingtip shape
+## 5. Wingtip shape
  
 The same technique is used as at base-line shape morphing
 The size of the picture can be zoomed,translated, as you need.
@@ -103,12 +104,12 @@ rib (offset from normal position is zero by default)
 select the rib number first in the spin box,
 then use the scroll bar to move the rib left or right…
  
-6. Line's morphing
+## 6. Line's morphing
  
 The positions at the center cell remain unchanged. The changes can be large at the wingtip.
  
  
-7. Billow compensation
+## 7. Billow compensation
  
 The cell’s (airfoil) surface is virtually unfolded in clockwise direction from the trailing edge down to the trailing edge up as the rectangle. The red dotted line represents the actual pattern shape.
 Wheel scales (exaggerates) the actual morphism, one can better see the transitions of the red line.
@@ -119,7 +120,7 @@ Billow up/down percent tells, how much of the compensation wil be used in a real
 Use upper side billow compensation checbox enables the auto-creation of a pattern somewhere between top and nose point.
 The extension graph shows the extension % of the whole wingtip canopy.
  
-8. Bridle & risers
+## 8. Bridle & risers
  
 Loading Tab:  contains definition of number of line-grups.
 Vertical scroll bars (A,B,C,D,E) defines the weights of points in particular line.
@@ -151,7 +152,7 @@ Bridle tables Tab:
 When shown on the page,it can be edited with a mouse. One can move points to more apropriate position, especially for printing !
 Right mouse button opens  printing request.
  
-9. Reinforcements and miniribs
+## 9. Reinforcements and miniribs
 milar Tab:
 two horizontal scroll bars  sets milar’s upper end or down end position,
 end points are connected with a line,containing 5 inner points: they are simply used
@@ -185,7 +186,7 @@ in the left side windows set appropriate values as: width, type(fixed or selecte
 check box (is selected)  put strap line to be used or not …
  selection to build: the list of cells with a strap
  
-10.Diagonals
+## 10.Diagonals
 diagonals plan Tab:
 two windows for diagonals: simple case only D1 window is used,in more complex case D2 is used also lower control window shows cross view of diagonals.
  

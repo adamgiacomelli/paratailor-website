@@ -30,6 +30,14 @@ export default class Home extends Component {
         <Jumbotron>
           <ReactMarkdown source={markdownHeader} />
         </Jumbotron>
+        <iframe
+          width="100%"
+          height="480"
+          src="https://www.youtube.com/embed/DRDmJKUL8rQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <h1>{"What is new"}</h1>
         <Card>
           <Card.Body>
