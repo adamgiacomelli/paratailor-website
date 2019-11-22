@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #dddddd;
 }
 
 code {
@@ -12,13 +13,65 @@ code {
 }
 
 a {
-  color: #7700cf;
+  color: #8541b9;
+}
+
+a:hover {
+  color: #9f1dff;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 50px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+}
+
+.btn a {
+  color: inherit;
+}
+
+.cardbox {
+  margin: 20px;
+}
+
+.cardbox-title {
+  font-size: 34px;
+}
+
+.cardbox-title a {
+  padding: 0;
 }
 
 nav.navbar {
   background-image: linear-gradient(to bottom, #222222, #111111);
   background-repeat: repeat-x;
   border-color: #252525;
+}
+
+.navbar-brand a {
+  color: #dddddd;
+}
+
+
+.navbar-brand a:hover {
+  text-decoration: none;
+  color: #999999;
+}
+
+.btn-toolbar .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #dddddd;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h1 {
@@ -39,7 +92,14 @@ h4 {
 }
 
 .root {
-  padding: 40px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .root {
+    margin-top: 50px;
+  }
 }
 
 .home-img-wrapper {

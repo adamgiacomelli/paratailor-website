@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import { Card } from "react-bootstrap";
 const ReactMarkdown = require("react-markdown");
-import DownloadsText from "./downloadText.md";
+import AnalysisText from "../text/analysisText.md";
+import CardBox from "./common/CardBox";
 
-export default class Downloads extends Component {
+export default class Analysis extends Component {
   constructor() {
     super();
     this.state = { markdown: "" };
   }
 
   componentWillMount() {
-    fetch(DownloadsText)
+    fetch(AnalysisText)
       .then(res => res.text())
       .then(text => this.setState({ markdown: text }));
   }
@@ -19,13 +19,9 @@ export default class Downloads extends Component {
     const { markdown } = this.state;
 
     return (
-      <Card>
-        <Card.Body>
-          <Card.Text>
-            <ReactMarkdown source={markdown} />
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      <CardBox title="Analysis">
+        <ReactMarkdown source={markdown} />
+      </CardBox>
     );
   }
 }

@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 const ReactMarkdown = require("react-markdown");
-import { Col, Card, Jumbotron, Row, Container } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 
 import bgImage from "../assets/home_bg.png";
 
-import NewsPost from "./NewsPost";
-import NewsText from "./newsText.md";
-import HeaderText from "./headerText.md";
+import AboutText from "../text/aboutText.md";
+import DownloadText from "../text/downloadText.md";
+import CardBox from "./common/CardBox";
+import NavLink from "react-bootstrap/NavLink";
 
 export default class Home extends Component {
   constructor() {
@@ -15,17 +16,17 @@ export default class Home extends Component {
   }
 
   componentWillMount() {
-    fetch(NewsText)
+    fetch(AboutText)
       .then(res => res.text())
-      .then(text => this.setState({ markdownNews: text }));
+      .then(text => this.setState({ markdownAbout: text }));
 
-    fetch(HeaderText)
+    fetch(DownloadText)
       .then(res => res.text())
-      .then(text => this.setState({ markdownHeader: text }));
+      .then(text => this.setState({ markdownDownload: text }));
   }
 
   render() {
-    const { markdownNews, markdownHeader } = this.state;
+    const { markdownAbout, markdownDownload } = this.state;
 
     return (
       <>
@@ -41,27 +42,17 @@ export default class Home extends Component {
         <Container className="root">
           <Row>
             <Col sm={12} md={6}>
-              <Jumbotron>
-                <h1>News</h1>
-                <ReactMarkdown source={markdownNews} />
-              </Jumbotron>
+              <CardBox title={<NavLink to={"/about"}>{"About"}</NavLink>}>
+                <ReactMarkdown source={markdownAbout} />
+              </CardBox>
             </Col>
             <Col sm={12} md={6}>
-              <Jumbotron>
-                <ReactMarkdown source={markdownHeader} />
-              </Jumbotron>
+              <CardBox title={<NavLink to={"/download"}>{"Download"}</NavLink>}>
+                <ReactMarkdown source={markdownDownload} />
+              </CardBox>
             </Col>
           </Row>
         </Container>
-
-        <iframe
-          width="100%"
-          height="480"
-          src="https://www.youtube.com/embed/DRDmJKUL8rQ"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
       </>
     );
   }

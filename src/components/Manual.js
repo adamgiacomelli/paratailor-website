@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 const ReactMarkdown = require("react-markdown");
-import ManualText from "./manual.md";
+import ManualText from "../text/manual.md";
 
 export default class Manual extends Component {
   constructor() {
