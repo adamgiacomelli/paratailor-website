@@ -7,7 +7,7 @@ import bgImage from "../assets/home_bg.png";
 import AboutText from "../text/aboutText.md";
 import DownloadText from "../text/downloadText.md";
 import CardBox from "./common/CardBox";
-import NavLink from "react-bootstrap/NavLink";
+import { NavLink } from "react-router-dom";
 
 export default class Home extends Component {
   constructor() {
