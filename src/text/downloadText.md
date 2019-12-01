@@ -1,4 +1,8 @@
+** Sunday, 1 Nov 2019 at 22:59 **
 
+Linux version is now available.
+
+You can download it [here](/download) 
 
 ** Wednesday, 23 Oct 2019 at 5:11 **
 

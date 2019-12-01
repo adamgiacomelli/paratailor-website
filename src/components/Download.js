@@ -25,8 +25,8 @@ export default class Download extends Component {
           <Button variant="outline-primary" href="/download/Ins_PT9Win.zip">
             Windows zip
           </Button>
-          <Button variant="outline-secondary">
-            Coming soon: Linux version
+          <Button variant="outline-primary" href="/download/Ins_PT9Lnx.tar.gz">
+            Linux tarball
           </Button>
         </ButtonToolbar>
         <ReactMarkdown source={markdown} />
