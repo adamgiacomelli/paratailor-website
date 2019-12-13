@@ -71,7 +71,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "deploy": "yarn build && aws s3 sync ./build s3://paratailor-homepage/ --profile agialab --acl public-read"
+    "deploy": "yarn build && aws s3 sync ./build s3://paratailor-homepage/ --profile agialab --acl public-read",
+    "deploy:installer": "aws s3 sync ./download s3://paratailor-homepage/download --profile agialab --acl public-read"
   },
   "eslintConfig": {
     "extends": "react-app"
